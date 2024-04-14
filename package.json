@@ -2,7 +2,7 @@
   "name": "cashbarmak",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://diassagatov.github.io/cbfront",
+ 
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
