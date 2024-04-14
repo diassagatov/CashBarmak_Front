@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    z-index: 100;
+}
+
+#root{
+    background-color: rgb(64, 184, 216);
+}
+
+.container {
+    height: 100vh;
+    margin: 0 auto; /* Corrected syntax error */
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: rgb(64, 184, 216);
+}
+
+.logForm{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcreate {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -100vw 0;
+    }
+}
+
+.clouds {
+    z-index: 20;
+    height: 300px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url('./img/clouds.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+    text-align: center;
+    padding: 10px 0;
+    animation: moveBackground 5s linear infinite;
+}

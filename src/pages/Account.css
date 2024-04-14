@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark-blue: rgb(34, 40, 49);
+    --slate-gray: rgb(57, 62, 70);
+    --teal: rgb(0, 173, 181);
+    --light-gray: rgb(238, 238, 238);
+}
+
+#root{
+    min-height: 100vh;
+    background-color: rgb(64, 184, 216);
+}
+
+*{
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+.over{
+    z-index: 1000;
+    width: 100%;
+} 
+
+.fullheight{
+    max-width: 600px;
+    color:white;
+    text-align: center;
+}
+
+.fullheight .btn{
+    margin-top: 10px;
+    width: 200px;
+}
+
+.column-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    color: black;
+}
+
+
+.card {
+    border-radius: 10px;
+    width: min(300px, 100%);
+    aspect-ratio: 1.586;
+    margin: 5px auto;
+    border: 2px solid white;
+    box-sizing: content-box;
+    color:white;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+
+.modal-body{
+    padding-top: 0;
+} 
+
+.qrTitle{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+    
+}
+
+.qrTitle div{
+    margin: 0 auto;
+}
+
+
+.card p{
+    background-color: rgba(255, 255, 255, 0.804);
+    color: var(--teal);
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+#Kaspi{
+    background-image: url('./img/kaspi.png');
+    
+}
+
+#Halyk{
+    background-image: url('./img/halyk.png');
+}
+
+#Jusan{
+    background-image: url('./img/jusan.png');
+}
+

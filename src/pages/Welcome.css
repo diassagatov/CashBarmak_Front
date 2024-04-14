@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark-blue: rgb(34, 40, 49);
+    --slate-gray: rgb(57, 62, 70);
+    --teal: rgb(0, 173, 181);
+    --light-gray: rgb(238, 238, 238);
+}
+
+
+*{
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+main{
+    width: 100vw;
+    background-color: white;
+}
+
+/* Align the container to center everything vertically and horizontally */
+.containerW {
+    height: 100vh; /* Set the height to fill the viewport */
+    width: min(100%, 800px);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 0 auto;
+    background-color: white ;
+}
+
+/* Styling for the heading */
+.welH {
+    color: var(--teal); /* Bootstrap primary color */
+    text-align: center; /* Center the title text */
+    margin-bottom: 10px; /* Spacing below the title */
+    width: min(100%, 800px);
+}
+
+h1 span{
+    color: var(--dark-blue); /* Bootstrap primary color */
+    text-align: center; /* Center the title text */
+    margin-bottom: 10px; /* Spacing below the title */
+}
+
+/* Enhancements for the paragraph text */
+p.lead {
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    text-align: center; /* Justify the text for a cleaner look */
+    margin-bottom: 10px; /* Spacing below the paragraph */
+    padding: 0px 30px;
+}
+
+/* Additional styles for buttons */
+.btn {
+    width: 60%; /* Make buttons full width */
+    background-color: var(--teal);
+    border: none;
+    margin: 2px;
+}
+
+.coin{
+    width: min(90%, 500px);  /* Set the width to your desired size */
+    height: auto;  /* Maintain the aspect ratio */
+}
+
+/* Specific style adjustments for large screens */
+@media (min-width: 768px) {
+    .btn {
+        width: auto; /* Auto width for buttons on larger screens */
+        padding: 10px 30px; /* Adjust padding for larger buttons */
+    }
+}
+
+
